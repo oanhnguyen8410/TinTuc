@@ -1,0 +1,251 @@
+
+
+.title-f3 {
+	img {
+		float: left;
+		max-width: 88px;
+		@include devices(280) {
+			width: 12%;
+    		margin-left: 29%;
+		}
+		@include devices(480) {
+			margin-left: 28%;
+		}
+		@include devices(640) {
+			margin-left: 32%;
+		}
+	}
+	img:hover {
+		filter: brightness(110%);
+		cursor: pointer;
+	}
+	p {
+		position: relative;
+	}
+	p:after {
+		background: url(../images/frame3/shadow-ball-title.png);
+		background-size: 100% 100%;
+		content: '';
+		position: absolute;
+    	width: 62px;
+    	height: 24px;
+    	top: 15px;
+    	left: 90px;
+    	z-index: -1;
+    	@include devices(360) {
+    		width: 66px;
+    		height: 29px;
+    		top: 15px;
+    		left: 102px;
+    	}
+    	@include devices(414) {
+    		width: 70px;
+    		height: 34px;
+    		top: 15px;
+    		left: 118px;
+    	}
+    	@include devices(480) {
+    		width: 83px;
+    		height: 42px;
+    		top: 15px;
+    		left: 147px;
+    	}
+    	@include devices(640) {
+    		width: 109px;
+    		height: 64px;
+    		top: 13px;
+   			left: 225px;
+    	}
+    	@include devices(768) {
+    		width: 137px;
+    		height: 72px;
+    		top: 13px;
+    		left: 263px;
+    	}
+	}
+	span {
+		font-family: 'uni-geoslabe';
+		color: white;
+		text-shadow :3px 0px 1px #091d42;
+		@include devices(280) {
+			font-size: 18px;
+    		line-height: 41px;
+   		 	padding-left: 3%;
+		}
+		@include devices(360) {
+			line-height: 48px;
+		}
+		@include devices(414) {
+			line-height: 50px;
+			font-size: 23px;
+		}
+		@include devices(480) {
+			line-height: 60px;
+    		font-size: 25px;
+		}
+		@include devices(640) {
+			line-height: 79px;
+    		font-size: 31px;
+		}
+		@include devices(768) {
+			line-height: 92px;
+		}
+	}
+}
+
+.square {
+	background: url(../images/frame3/bg-item-pokedex.png);
+	background-size: 100% 100%;
+	max-width: 92px;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+    margin-right: auto;
+    float: left;
+    @include devices(280) {
+    	width: 17%;
+    	margin: 0.5%;
+    }
+    @include devices(640) {
+    	max-width: none;
+    }
+    @include devices(1024) {
+    	width: 19%;
+    }
+		
+}
+.square:hover {
+	background: url(../images/frame3/hover-bg-item.png);
+	background-size: 100% 100%;
+	filter: brightness(110%);
+  	transform: scale(1.1);
+  
+  
+}
+.box-pokedex {
+	@include devices(280) {
+		margin-top: 5%;
+    	margin-left: 7.5%;
+	}
+	@include devices(768) {
+		margin-left: 9.5%;
+	}
+	@include devices(1024) {
+		margin-left: 0px
+	}
+	.slick-prev {
+		background: url(../images/frame3/arrow.png);
+		background-size: 100% 100%;
+		width: 20px;
+   	 	height: 20px;
+    	top: 50%;
+    	left: -7%;
+    	@include devices(414) {
+    		width: 25px;
+    		height: 25px;
+    	}
+    	@include devices(640) {
+    		width: 40px;
+    		height: 40px;
+    	
+    	}
+	}
+	.slick-next {
+		background: url(../images/frame3/arrow.png);
+		background-size: 100% 100%;
+		width: 20px;
+   	 	height: 20px;
+    	top: 50%;
+    	right: 2%;
+    	transform: rotate(180deg);
+    	@include devices(414) {
+    		width: 25px;
+    		height: 25px;
+    	}
+    	@include devices(640) {
+    		width: 40px;
+    		height: 40px;
+    		
+    	}
+	}
+
+}
+.box-pokedex {
+	cursor: pointer;
+	img {
+		max-width: 128px;
+		@include devices(280) {
+			width: 86%;
+    		height: 100%;
+    		padding: 6px 6px 3px 3px;
+		}
+		@include devices(480) {
+			padding: 6px 6px 6px 5px;
+		}
+		@include devices(768) {
+			padding: 6px 6px 6px 7px;
+		}
+
+	}
+}
+.box-poke-1 {
+	float: left;
+	@include devices(1024) {
+		margin-left: 3%;
+	}
+}
+.box-poke-2 {
+	float: left;
+	@include devices(1024) {
+		margin-left: 2px;
+	}
+}
+.box-break {
+	float: left;
+}
+
+//pc 
+.frame3 {
+	@include devices(1024) {
+		margin-top: 5%;
+	}
+	@include devices(1280) {
+		margin-top: 2.5%;
+	}
+}
+.title-f3 {
+	@include devices(1024) {
+		margin-left: 9%;
+	}
+	p {
+		@include devices(1280) {
+			font-size: 39px;
+		}
+	}
+	p:after {
+		@include devices(1024) {
+			left: 317px;
+		}
+		@include devices(1280) {
+			left: 371px;
+		}
+	}
+}
+.box-pokedex {
+	@include devices(1024) {
+		margin-top: 7%;
+	}
+	@include devices(1280) {
+		margin-top: 4%;
+	}
+}
+.box-poke-1 {
+	@include devices (1280) {
+		margin-left: 7.5%;
+	}
+}
+.box-poke-2 {
+	@include devices(1280) {
+		margin-left: 0px;
+	}
+}

@@ -1,0 +1,387 @@
+.frame2 {
+	padding: 0 10px;
+	@include devices(1024) {
+		padding: 0 20px;
+	}
+}
+.f2-slide {
+	// max-width: 697px;
+	width: 100%;
+
+}
+.f2-box-slide {
+	margin-top: 15%;
+	@include devices(1024) {
+		width: 60%;
+		float: left;
+		
+	}
+	@include devices(1280) {
+		margin-top: 6%;
+	}
+	.slick-dots {
+		bottom: 2px;
+		
+		@include devices(480) {
+			bottom: 5px;
+		}
+	}
+	.slick-dots li
+	{
+	    width: 10px;
+    	height: 10px;
+	    margin: 0 2px;
+	    @include devices(480) {
+	    	width: 15px;
+	    	height: 15px;
+	    }
+	}
+	.slick-dots li.slick-active
+	{
+	    color: white;
+	    width: 37px;
+    	height: 10px;
+    	@include devices(480) {
+    		width: 44px;
+    		height: 15px;
+    	}
+	}
+	.slick-dots li button:before {
+		display: none;
+	} 
+
+}
+.box-news {
+	float: left;
+	background-color: white;
+	width: 100%;
+	@include devices(1024) {
+		width: 38%;
+		margin-top: 15%;
+	}
+	@include devices(1280) {
+		margin-top: 6%;
+		width: 40%;
+	}
+	ul {
+		list-style: none;
+		font-family: 'utm-cafeta';
+		position: relative;
+		
+		@include devices(280) {
+			padding-top: 3%;
+    		font-size: 17px;
+
+		}
+		@include devices(360) {
+			font-size: 20px;
+		}
+		@include devices(414) {
+			font-size: 23px;
+		}
+		@include devices(480) {
+			font-size: 27px;
+		}
+		@include devices(640) {
+			font-size: 35px;
+		}
+		@include devices(1024) {
+			font-size: 19px;
+		}
+		@include devices(1280) {
+			font-size: 24px;
+		}
+	}
+}
+ul.tabs:after {
+	content: '';
+	background: url(../images/frame2/after-1.png);
+	background-size: 100% 100%;
+	position: absolute;
+	width: 94%;
+    height: 1px;
+    left: 3%;
+    top: 36px;
+    @include devices(360) {
+    	top: 40px;
+    }
+    @include devices(414) {
+    	top: 45px;
+    }
+    @include devices(480) {
+    	top: 51px;
+    }
+    @include devices(640) {
+    	top: 69px;
+    }
+    @include devices(768) {
+    	top: 73px;
+    	width: 91%;
+    	left: 5%;
+    }
+    @include devices(1024) {
+    	top: 41px;
+	    width: 90%;
+	    left: 4%;
+    }
+    @include devices(1280) {
+    	top: 50px;
+	    width: 91%;
+	    left: 4%;
+    }
+
+}
+li.tab-link {
+	float: left;
+	padding: 0px 9px;
+	@include devices(360) {
+		padding: 0px 10px;
+	}
+	@include devices(375) {
+		padding: 0px 11px;
+	}
+	@include devices(414) {
+		padding: 0px 12px;
+	}
+	@include devices(480) {
+		padding: 0px 14px;
+	}
+	@include devices(640) {
+		padding: 0px 21px;
+	}
+	@include devices(768) {
+		padding: 0px 36px;
+	}
+	@include devices(1024) {
+		padding: 0px 16px;
+	}
+	@include devices(1280) {
+		padding: 0px 20px;
+	}
+}
+
+
+.tab-link {
+	a {
+		color: #757575;
+
+	}
+	a:hover {
+		color: #1f5eac;
+		border-bottom: 4px solid #1f5eac;
+    	line-height: 25px;
+    	@include devices(640) {
+    		border-bottom: 6px solid #1f5eac;
+    	}
+	}
+}
+.current {
+	a {
+		color: #1f5eac;
+		border-bottom: 4px solid #1f5eac;
+		line-height: 25px;
+		 @include devices(640) {
+    		border-bottom: 6px solid #1f5eac;
+    	}
+	}
+
+}
+.item-5 {
+	img {
+		@include devices(280) {
+			width: 72%;
+		}
+		@include devices(480) {
+			width: 80%;
+		}
+		@include devices(640) {
+			width: 100%;
+		}
+	}
+	a:hover {
+		border-bottom: none;
+	}
+}
+.tab-content {
+	display: none;
+}
+.tab-content.current {
+	display: block;
+}
+.news {
+	position: relative;
+	text-align: left;
+	padding: 10px 0px;
+	border-bottom: 1px solid #b4b4b4;
+	@include devices(1024) {
+		padding-top: 17px;
+    	padding-bottom: 0.5px;
+	}
+	@include devices(1280) {
+		padding-top: 18px;
+	}
+}
+.item5 {
+	border-bottom: none;
+}
+.news {
+	p {
+		@include devices(280) {
+			font-size: 12px;
+			color: black;
+		}
+		@include devices(360) {
+			font-size: 13px;
+		}
+		@include devices(414) {
+			font-size: 14px;
+		}
+		@include devices(480) {
+			font-size: 15px;
+		}
+		@include devices(640) {
+			font-size: 18px;
+		}
+		@include devices(768) {
+			font-size: 22px;
+		}
+		@include devices(1024) {
+			font-size: 13px;
+		}
+		@include devices(1280) {
+			font-size: 15px;
+		}
+
+	}
+	a {		
+		@include devices(480) {
+			line-height: 30px;
+		}
+		@include devices(768) {
+			line-height: 50px;
+		}
+		@include devices(1024) {
+			line-height: 26px;
+		}
+		@include devices(1280) {
+			line-height: 35px;
+		}
+	}
+}
+.tab-content-news {
+	font-family: 'tahoma';
+
+	@include devices(280) {
+		padding: 25px 10px 0px 10px;
+		line-height: 15px;
+	}
+	@include devices(360) {
+		padding-top: 37px;
+	}
+	@include devices(480) {
+		padding-top: 46px;
+	}
+	@include devices(640) {
+		padding: 53px 20px 0px 20px;
+	}
+	@include devices(768) {
+		padding: 64px 30px 0px 30px;
+	}
+	@include devices(1024) {
+		padding: 30px 23px 0px 17px;
+	}
+	@include devices(1280) {
+		padding: 38px 23px 0px 17px;
+	}
+}
+span.txt-title {
+	float: left;
+	font-weight: bold;
+	color: #757575;
+}
+span.txt-date {
+	float: right;
+	color: #757575;
+}
+
+
+//box-pc
+.frame2-button {
+	padding: 20px 20px 0px;
+}
+.box-button-f2 {
+	
+	@include max_devices(1023) {
+		display: none;
+	}
+	p {
+		font-family: 'utm-cafeta';
+		color: white;
+		text-align: right;
+    	margin-right: 54%;
+    	margin-top: 13%;
+    	font-size: 20px;
+    	text-shadow: 4px 2px 2px rgba(6, 55, 125, 0.75);
+		@include devices(1280) {
+			font-size: 22px;
+		}
+	}
+	span {
+		font-size: 22px;
+		@include devices(1280) {
+			font-size: 25px;
+		}
+	}
+
+}
+.but {
+	float: left;
+	@include devices(1024) {
+		width: 24.2%;
+		height: 137px;
+	}
+	@include devices(1280) {
+		width: 24.6%;
+		height: 150px;
+	}
+	  	transition: transform 1s, filter 0.5s ease-in-out;
+  		transform-origin: center center;
+  		
+	&:hover {
+		
+		filter: brightness(110%);
+  		transform: scale(1.1);
+	}
+
+}
+.vip {
+	background: url(../images/frame2/bg-vip.png) no-repeat;
+	background-size: 100% 100%;
+	span {
+		font-size: 34px;
+		@include devices(1280) {
+			font-size: 38px;
+		}
+	}
+	p {
+		margin-right: 61%;
+	}
+}
+.napthe {
+	background: url(../images/frame2/bg-napthe.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.5%;
+}
+.giftcode {
+	background: url(../images/frame2/bg-giftcode.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.5%;
+	p {
+		margin-right: 50%;
+	}
+}
+.choipc {
+	background: url(../images/frame2/bg-choipc.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.5%;
+}

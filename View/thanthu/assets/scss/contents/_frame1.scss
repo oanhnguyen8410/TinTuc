@@ -1,0 +1,256 @@
+.button-mobile {
+	@include devices(1024) {
+		display: none;
+	}
+}
+.button-pc {
+	@include max_devices(1023) {
+		display: none;
+	}
+}
+.btn-video {
+	animation: zoom 2s infinite;
+	a {
+		display: block;
+	}
+	img {
+		max-width: 119px;
+    	width: 100%;
+	}
+	@include devices(280) {
+		margin-top: 81%;
+    	width: 17%;
+	}
+	@include devices(1024) {
+		margin-top: 50%;
+    	
+	}
+	@include devices(1280) {
+		margin-top: 42%;
+	}
+	// @include devices(1440) {
+	// 	margin-top: 36%;
+	// }
+}
+.box-button {
+	font-family: 'uni-geoslabe';
+}
+.mb {
+	background: url(../images/frame1/bg-button-tg-mobile.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	@include devices(280) {
+	    width: 30%;
+	    height: 34px;
+	    margin-top: 1%;
+	}
+	@include devices(411) {
+		height: 41px;
+	}
+	@include devices(480) {
+		height: 50px;
+	}
+	@include devices(640) {
+		height: 72px;
+	}
+	@include devices(768) {
+		height: 90px;
+	}
+}
+.mb:hover {
+	background: url(../images/frame1/bg-btn-hv.png) no-repeat;
+	background-size: 100% 100%;
+}
+.napthe-mb {
+	@include devices(280) {
+		margin-left: 19%;
+	}
+} 
+.taigame-mb {
+	margin-left: 2%;
+}
+.mb {
+	span {
+		text-shadow: 1px 2px 2px #000;
+		color: white;
+		@include devices(280) {
+			line-height: 32px;
+    		font-size: 12px;
+		}
+		@include devices(411) {
+			line-height: 40px;
+    		font-size: 14px;
+		}
+		@include devices(480) {
+			line-height: 48px;
+    		font-size: 16px;
+		}
+		@include devices(640) {
+			line-height: 67px;
+    		font-size: 22px;
+		}
+		@include devices(768) {
+			line-height: 85px;
+    		font-size: 26px;
+		}
+	}
+	span:hover {
+		background: -webkit-linear-gradient(#fffffe, #ffffea, #fff297, #ffe266);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		text-shadow: none;
+	}
+}
+.button-pc {
+	background: url(../images/frame1/bg-cumtaigame.png) no-repeat;
+	background-size: 100% 100%;
+	@include devices(1024) {
+		width: 43.5%;
+    	height: 165px;
+	}
+	@include devices(1280) {
+		width: 52.5%;
+    	height: 201px;
+	}
+}
+.button-pc {
+	img {
+		float: left;
+		max-width: 159px;
+		@include devices(1024) {
+			padding-left: 6%;
+    		padding-top: 6%;
+    		width: 26%;
+		}
+		@include devices(1280) {
+			padding-top: 4.5%;
+			width: 24%;
+			padding-left: 7%;
+		}
+	}
+}
+.napthe-pc {
+	float: left;
+    display: block;
+    background: url(../images/frame1/btn-napthe.png);
+    background-size: 100% 100%;
+    @include devices(1024) {
+	    width: 27%;
+	    height: 115px;
+    	margin-top: 6%;
+    	margin-left: 2%;
+    }
+    @include devices(1280) {
+    	height: 150px;
+    	width: 25%;
+    	margin-top: 4.5%;
+    }    
+    &:hover {
+    	background: url(../images/frame1/hover-napthe.png);
+    	background-size: 100% 100%;
+    }
+}
+.box-taigame-pc {
+	float: left;
+	@include devices(1024) {
+		margin-left: 2%;
+    	margin-top: 6%;
+	}
+	@include devices(1280) {
+		margin-top: 4%;
+	}
+ }
+.btn-pc {
+	background: url(../images/frame1/bg-button-tg.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+    width: 100%;
+    @include devices(1024) {	
+    	height: 34px;
+    }
+    @include devices(1280) {
+    	height: 44px;
+    }
+}
+.btn-pc {
+	position: relative;
+	@include devices(1024) {
+		margin-top: 3%;
+	}
+	span {
+		float: left;
+		background: -webkit-linear-gradient(#fffffe, #ffffea, #fff297, #ffe266);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		  font-weight: bold;
+		  @include devices(1024) {
+		  	padding-left: 33px;
+		    padding-top: 6px;
+		    font-size: 14px;
+		  }
+		  @include devices(1280) {
+		  	font-size: 20px;
+		  	padding-left: 65px;
+		  	padding-top: 9px;
+		  	
+		  }
+	}
+}
+.btn-pc:hover {
+	background: url(../images/frame1/bg-btn-link-hv.png);
+	background-size: 100% 100%;
+}
+@mixin span-before {
+	content: '';
+	background-size: 100% 100%;
+	position: absolute;
+}
+@mixin span-bf-value ($w, $h, $l, $t) {
+		width: $w;
+	    height: $h;
+	    left: $l;
+	    top: $t;
+}
+span.android::before {
+	background: url(../images/frame1/icon-android.png);
+	@include devices(1024) {
+		@include span-bf-value (20px, 20px, 8px, 6px);
+		@include span-before;
+	}
+	@include devices(1280) {
+		@include span-bf-value (30px, 30px, 18px, 7px);
+	}
+}
+span.apple::before {
+	background: url(../images/frame1/icon-apple.png);
+	@include devices(1024) {
+		@include span-bf-value (20px, 20px, 8px, 6px);
+		@include span-before;
+	}
+	@include devices(1280) {
+		@include span-bf-value (30px, 30px, 18px, 7px);
+	}
+}
+span.pc::before {
+	background: url(../images/frame1/icon-pc.png);
+	@include devices(1024) {
+		@include span-bf-value (20px, 20px, 8px, 6px);
+		@include span-before;
+	}
+	@include devices(1280) {
+		@include span-bf-value (30px, 30px, 18px, 7px);
+	}
+}
+
+ // .modal-header, h4, .close {
+ //    background-color: #5cb85c;
+ //    color:white !important;
+ //    text-align: center;
+ //    font-size: 30px;
+ //  }
+ //  .modal-footer {
+ //    background-color: #f9f9f9;
+ //  }
+ //  .modal-dialog {
+ //  	position: absolute;
+ //  }

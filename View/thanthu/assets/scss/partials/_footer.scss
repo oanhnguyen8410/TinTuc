@@ -1,0 +1,191 @@
+
+footer {
+	background-color: #091d42;
+
+}
+.return-top {
+	position: relative;
+	background: url(../images/frame4/footer.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+	@include devices(280) {
+		width: 54px;
+	    height: 27px;
+	    top: -26px;
+	    left: 40%;
+	}
+	@include devices(414) {
+		left: 44%;
+	}
+	@include devices(640) {
+		width: 78px;
+	    height: 40px;
+	    top: -39px;
+	    left: 46%;
+	}
+	p {
+		position: absolute;
+		color: #ffc800;
+		font-family: 'uni-geoslabe';
+		@include devices(280) {
+			font-size: 10px;
+		    top: 12px;
+		    left: 17px;
+		}
+		@include devices(640) {
+			font-size: 17px;
+			top: 17px;
+			left: 21px;
+		}
+	}
+}
+.button-footer {
+	@include devices(280) {
+		margin-left: 10%;
+	}
+	@include devices(640) {
+		margin-left: 16%;
+	}
+	@include devices(1024) {
+		margin-left: 13%;
+	}
+	@include devices(1280) {
+		margin-left: 20%;
+	}
+}
+.ft {
+	background: url(../images/frame1/bg-button-tg-mobile.png) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	@include devices(280) {
+	    width: 30%;
+	    height: 34px;
+	    margin-top: 1%;
+	}
+	@include devices(411) {
+		height: 41px;
+	}
+	@include devices(480) {
+		height: 50px;
+	}
+	@include devices(640) {
+		height: 53px;
+		width: 26%;
+		margin-left: 2%;
+	}
+	@include devices(1280) {
+		height: 70px;
+    	width: 22%;
+	}
+}
+.ft:hover {
+	background: url(../images/frame1/bg-btn-hv.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ft {
+	p {
+		font-family: 'utm-facebook-k&t';
+		text-shadow: 1px 2px 2px #000;
+		color: white;
+		text-align: center;
+		@include devices(280) {
+			line-height: 32px;
+    		font-size: 12px;
+		}
+		@include devices(411) {
+			line-height: 40px;
+    		font-size: 14px;
+		}
+		@include devices(480) {
+			line-height: 48px;
+    		font-size: 16px;
+		}
+		@include devices(640) {
+			line-height: 46px;
+    		font-size: 20px;
+		}
+		@include devices(1280) {
+			line-height: 62px;
+    		font-size: 23px;
+		}
+	}
+	p:hover {
+		background: -webkit-linear-gradient(#fffffe, #ffffea, #fff297, #ffe266);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		text-shadow: none;
+	}
+}
+.txt-footer {
+	@include devices(280) {
+		padding: 15% 0px;
+	}
+	@include devices(414) {
+		// padding-top: 13%;
+		margin-left: 10%;
+	}
+	@include devices(640) {
+		padding: 12% 0px;
+		margin-left: 16%;
+	}
+	@include devices(1024) {
+		// padding-top: 10%;
+		padding: 7% 0px;
+    margin-left: 20%;
+	}
+	@include devices(1280) {
+		padding: 8% 0px 5% 0px;
+		margin-left: 21%;
+	}
+}
+.txt-footer {
+	text-align: center;
+	color: white;
+	a {
+		float: left;
+		color: white;
+		padding-left: 1%;
+	}
+	.txt-1 {
+		padding-left: 21%;
+	}
+	p {
+		font-size: 12px;
+		line-height: 19px;
+		@include devices(480) {
+			font-size: 14px;
+		}
+		@include devices(640) {
+			font-size: 15px;
+			line-height: 19px;
+		}
+		@include devices(768) {
+			font-size: 17px;
+		}
+		@include devices(1024) {
+			font-size: 19px;
+		}
+	}
+}
+.text {
+	float: left;
+	@include devices(280) {
+		font-size: 10px;
+	    padding-left: 14%;
+	    line-height: 10px;
+	}
+	@include devices(480) {
+		font-size: 12px;
+	} 
+	@include devices(640) {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	@include devices(768) {
+		font-size: 15px;
+	}
+	@include devices(1024) {
+		font-size: 19px;
+		line-height: 26px;
+	}
+}

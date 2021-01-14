@@ -1,0 +1,70 @@
+@import '_mixins.scss';
+@import '_keyframes.scss';
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: 'utm-facebook-k&t';
+    src: url(../fonts/utm-facebook-k&t.ttf);
+}
+@font-face {
+   font-family: 'tahoma';
+   src: url(../fonts/tahoma.ttf);
+}
+@font-face {
+   font-family: 'tahomabold';
+   src: url(../fonts/tahomabold.TTF);
+}
+@font-face {
+   font-family: 'utm-cafeta';
+   src: url(../fonts/utm-cafeta.ttf);
+}
+@font-face {
+   font-family: 'uni-geoslabe';
+   src: url(../fonts/uni-geoslabe.ttf);
+
+}
+
+body {
+ 
+	@include devices(280) {
+		background: url(../images/frame1/bg-mobile.png) no-repeat center top;
+		background-size: 100% auto;
+	}
+	@include devices(1024) {
+		background: url(../images/frame1/bg-homepage-pc.jpg) no-repeat center top;
+		background-size:  auto;
+	}
+  
+}
+.container {
+    @include devices (280) {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    
+    @include devices(1024) {
+      width: 1024px;
+      margin: 0 auto;
+    }
+    @include devices(1280) {
+      width: 1205px;
+      margin: 0 auto;
+    }
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+//partials
+@import "partials/header";
+@import "partials/footer";
+//contents
+@import "contents/frame1";
+@import "contents/frame2";
+@import "contents/frame3-1";
+@import "contents/frame4";
