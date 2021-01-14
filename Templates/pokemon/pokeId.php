@@ -142,7 +142,8 @@
 		}
 
 </style>
-<div class= "wrapper clearfix">	
+<div class= "wrapper clearfix">
+	<div></div>
 	<div class="container">
 			<h1>Từ điển Pokemon</h1>
 		<div class="listpoke">
