@@ -123,22 +123,20 @@
 		    background-size: 100% 100%;
 		}
 		.power {
-			position: relative;
-			margin-right: 20px;
-			   width: 200px;
-		    left: 1000px;
-		    top: -170px;
+			    float: right;
+		    margin-top: -171px;
+		    margin-right: 81px;
 		}
-		.power p {
-			position: absolute;
+		.txt-power{
+			
 			font-size: 27px;
-			color: #b4ebff
+			color: #b4ebff;
 		}
-		.power span {
-			top: 58px;
-			position: absolute;
+		.item-power {
 			font-size: 30px;
-    		line-height: 45px;
+			line-height: 40px;
+		    color: #b4ebff;
+		    margin-top: -53px;
 		}
 
 </style>
@@ -166,8 +164,8 @@
 	                 </div>
 	                <div class="info"><p style="color: #b4ebff; font-size: 27px;">Phiên bản: </p><br><span><?php echo $item['version']?></span></div>
 					<div class="version"><?php echo $item['infor']?></div>
-					<div class="power"><p>Năng lực </p><br>
-						<span><?php echo $item['power']?></span>
+					<div class="power"><p class="txt-power">Năng lực </p><br>
+						<div class="item-power"><?php echo $item['power']?></div>
 				</div>
 		</div>
 	</div>

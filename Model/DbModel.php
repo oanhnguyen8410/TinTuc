@@ -27,7 +27,7 @@
 // 		}
 // 	}
 // }
-class DbModel {
+	class DbModel {
 		public function connect() {
 			$con = mysqli_connect('localhost','root','','thanthu_db');
 			if (mysqli_connect_errno()) {
@@ -36,5 +36,15 @@ class DbModel {
 			return $con;
 		}
 	}
+
+// class DbModel {
+// 		public function connect() {
+// 			$con = mysqli_connect('remotemysql.com','etTHVoJ4g3','76tEJonpoE','etTHVoJ4g3');
+// 			if (mysqli_connect_errno()) {
+// 			  echo 'Connect error: ' .mysqli_connect_error();
+// 			}
+// 			return $con;
+// 		}
+// 	}
 
 ?>

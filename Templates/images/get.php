@@ -42,7 +42,7 @@
                                         <tr>
                                             <td style="text-align: center"><?php echo $key+1 ?></td>
                                             <td>
-                                                <img width="200px" src="<?php echo $img['url_thumbnail']; ?>">
+                                                <img width="200px" height="130px" src="<?php echo $img['url_thumbnail']; ?>">
                                             </td>
                                             <td>
                                                 <?php echo $img['url_thumbnail'] ?>

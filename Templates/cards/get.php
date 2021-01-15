@@ -60,7 +60,7 @@
                                                 <?php echo $card['code'] ?>
                                             </td>
                                             <td style="text-align: center;">
-                                               <?php echo $card['price'] ?>
+                                               <?php echo $card['price'] ?> 
                                             </td>
                                             <td style="text-align: center;">
                                                

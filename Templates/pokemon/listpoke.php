@@ -110,15 +110,18 @@
 	    letter-spacing: 2px;
 	}
 	.line {
-		margin-left: 150px;
-	    padding-left: 10px;
+		margin-left: 130px;
+	    /*padding-left: 10px;*/
 	    background-color: #0094e5;
-	    width: 68px;
+	    width: 98px;
 	    border-radius: 10px;
 	    font-size: 18px;
 	    text-shadow: 2px 0px 1px #091d42;
 	 	color: white;
 
+	}
+	.line p {
+		text-align: center;
 	}
 	.box-pokedex-total {
 		z-index: 2;
@@ -159,7 +162,7 @@
 									<h2>00<?php echo $poke['id'] ?></h2>
 				                  <h3><?php echo $poke['name'] ?></h3> 
 				                   
-				                    <div class="line">Hệ <?php echo $poke['line']?></div>
+				                    <div class="line"><p>Hệ <?php echo $poke['line']?></p></div>
 				                    
 							</div>
 							</a>
